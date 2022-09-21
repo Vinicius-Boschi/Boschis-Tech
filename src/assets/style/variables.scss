@@ -1,0 +1,22 @@
+$darkBlue: #201B2C;
+$darkBlue-two: #2F2841;
+$lightGreen: #77FFC0;
+$green: #00FF88;
+$darkGreen: #49AA26;
+$white: #E7E8E9;
+$gray: #999999;
+$lightGray: #D9D9D9;
+$lightPurple: #867D98;
+$purple: #514869;
+$transparent: #FFFFFF1A;
+$red: #FF0000;
+$blue: #0000FF;
+$orange: #F97316;
+
+@mixin phone {
+    @media (min-width: 375px) and (max-width: 639px) { @content; }
+}
+
+@mixin notebook {
+    @media (min-width: 640px) and (max-width: 1200px) { @content; }
+}

@@ -1,0 +1,25 @@
+{
+  "profile": [
+    {
+      "name": "freelance",
+      "date": "2022-09-15",
+      "price": "100",
+      "description": "salário",
+      "id": 1
+    },
+    {
+      "name": "suco de laranja",
+      "date": "2022-09-21",
+      "price": "-15",
+      "description": "bedida",
+      "id": 2
+    },
+    {
+      "name": "Balas",
+      "date": "2022-09-20",
+      "price": "16",
+      "description": "doce",
+      "id": 3
+    }
+  ]
+}
