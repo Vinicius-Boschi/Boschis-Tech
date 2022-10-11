@@ -17,7 +17,7 @@
                 <div class="main__products">
                     <input name="date" type="date" class="main__input" id="date" placeholder="Data do Produto" required data-dateBuy>
                 </div>
-                <Button />
+                <Button title="Registrar"/>
             </form>
         </section>
     </main>
@@ -25,10 +25,10 @@
 </template>
 
 <script>
-    import customerService from '../js/service/cliente-service.js'
-    import Header from './Header.vue'
-    import Button from './Buttons/ButtonRegister.vue'
-    import Footer from './Footer.vue'
+    import customerService from '../../js/service/cliente-service.js'
+    import Header from '../Principal/Header.vue'
+    import Button from '../Edit/Button.vue'
+    import Footer from '../Principal/Footer.vue'
     
     export default {
         name: 'RegisterProduct',
@@ -71,6 +71,6 @@
 </script>
 
 <style lang="scss">
-    @import '../assets/style/variables.scss';
-    @import '../assets/style/Products.scss';
+    @import '@/assets/style/variables.scss';
+    @import '@/assets/style/Products.scss';
 </style>

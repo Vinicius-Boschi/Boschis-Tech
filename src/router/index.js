@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '../components/HomePage.vue'
+import HomePage from '../components/Principal/HomePage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,12 +12,12 @@ const router = createRouter({
     {
       path: '/registerProduct',
       name: 'RegisterProduct',
-      component: () => import('../components/RegisterProduct.vue')
+      component: () => import('../components/Form/RegisterProduct.vue')
     },
     {
       path: '/editProduct',
       name: 'EditProduct',
-      component: () => import('../components/EditCustomer.vue')
+      component: () => import('../components/Edit/EditCustomer.vue')
     }
   ]
 })

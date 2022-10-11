@@ -68,6 +68,6 @@
 </script>
 
 <style lang="scss">
-    @import '../assets/style/variables.scss';    
-    @import '../assets/style/Footer.scss';
+    @import '@/assets/style/variables.scss';    
+    @import '@/assets/style/Footer.scss';
 </style>

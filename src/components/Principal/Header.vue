@@ -70,6 +70,6 @@
 </script>
 
 <style lang="scss">
-    @import '../assets/style/variables.scss';
-    @import '../assets/style/header.scss';
+    @import '@/assets/style/variables.scss';
+    @import '@/assets/style/header.scss';
 </style>

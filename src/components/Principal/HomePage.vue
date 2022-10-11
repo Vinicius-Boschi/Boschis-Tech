@@ -2,26 +2,12 @@
   <Header />
   <main class="main">
         <section class="main__section">
-            <div class="main__entries">
-                <h3 class="main__title"> <!---Colocar um FOR aqui.-->
-                    <span>Entradas</span>
-                    <img src="https://user-images.githubusercontent.com/74377158/191601047-4914f6d7-ba20-4ec8-ae9e-e091c82f2440.svg" alt="arrow up">
-                </h3>
-                <p class="main__value" id="incomes-label"></p>
-            </div>
-            <div class="main__entries">
+            <div class="main__entries" v-for="item in items" :key="item.id">
                 <h3 class="main__title">
-                    <span>Saídas</span>
-                    <img src="https://user-images.githubusercontent.com/74377158/191600930-da4c9269-7bb9-4305-9335-ddac39d076ea.svg" alt="arrow down">
+                    <span>{{ item.title }}</span>
+                    <img :class="item.class" :src="item.image" :alt="item.alt">
                 </h3>
-                <p class="main__value" id="expenses-label"></p>
-            </div>
-            <div class="main__entries">
-                <h3 class="main__title">
-                    <span>Total</span>
-                    <img class="main__dollar" src="https://user-images.githubusercontent.com/74377158/191601125-5f1559e1-9d34-42a8-a951-576918ad41fe.svg" alt="cifrão">
-                </h3>
-                <p class="main__value" id="total-label"></p>
+                <p class="main__value" :id="item.id"></p>
             </div>
         </section>
         
@@ -49,7 +35,7 @@
 </template>
 
 <script>
-    import customerService from '../js/service/cliente-service.js'
+    import customerService from '../../js/service/cliente-service.js'
     import Header from './Header.vue'
     import Footer from './Footer.vue'
 
@@ -62,6 +48,20 @@
         },
         data() {
             return {
+                items: [
+                    {
+                        title: 'Entradas', image: 'https://user-images.githubusercontent.com/74377158/191601047-4914f6d7-ba20-4ec8-ae9e-e091c82f2440.svg', alt: 'arrow up', id: 'incomes-label',
+                        class: 'main__image'
+                    },
+                    {
+                        title: 'Saídas', image: 'https://user-images.githubusercontent.com/74377158/191600930-da4c9269-7bb9-4305-9335-ddac39d076ea.svg', alt: 'arrow down', id: 'expenses-label',
+                        class: 'main__image'
+                    },
+                    {
+                        title: 'Total', image: 'https://user-images.githubusercontent.com/74377158/191601125-5f1559e1-9d34-42a8-a951-576918ad41fe.svg', alt: 'dollar', id: 'total-label',
+                        class: 'main__dollar'
+                    }
+                ],
                 creatNewLine(name, date, price, description, id) {
                     const numberFormat = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' })
                     const formatedPrice = numberFormat.format(price)
@@ -149,6 +149,6 @@
 </script>
 
 <style lang="scss">
-    @import '../assets/style/variables.scss';
-    @import '../assets/style/HomePage.scss'
+    @import '@/assets/style/variables.scss';
+    @import '@/assets/style/HomePage.scss'
 </style>
