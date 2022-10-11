@@ -31,7 +31,7 @@
                 </div>
                 <div class="main__already">
                     <span>
-                        <p>Já possui conta? Faça o <a class="main__link" href="#">login.</a></p>
+                        <p>Já possui conta? Faça o <a class="main__link" href="/login">login.</a></p>
                     </span>
                 </div>
             </form>

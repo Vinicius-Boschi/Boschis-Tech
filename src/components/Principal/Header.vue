@@ -31,16 +31,16 @@
                 titleNav: "Boschi's Tech",
                 items: [
                     {
-                        link: '#', class: 'fa-solid fa-house', titleList: 'Home'
+                        link: '/', class: 'fa-solid fa-house', titleList: 'Home'
                     },
                     {
-                        link: '#', class: 'fa-solid fa-address-card', titleList: 'Sobre nós'
+                        link: '/comingsoon', class: 'fa-solid fa-address-card', titleList: 'Sobre nós'
                     },
                     {
-                        link: '#', class: 'fa-regular fa-paper-plane', titleList: 'Serviços'
+                        link: '/comingsoon', class: 'fa-regular fa-paper-plane', titleList: 'Serviços'
                     },
                     {
-                        link: '#', class: 'fa-solid fa-mobile-screen', titleList: 'Contato'
+                        link: '/comingsoon', class: 'fa-solid fa-mobile-screen', titleList: 'Contato'
                     }
                 ]
             }

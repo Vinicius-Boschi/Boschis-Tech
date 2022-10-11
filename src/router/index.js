@@ -18,6 +18,26 @@ const router = createRouter({
       path: '/editProduct',
       name: 'EditProduct',
       component: () => import('../components/Edit/EditCustomer.vue')
+    },
+    {
+      path: '/comingsoon',
+      name: 'Coming Soon',
+      component: () => import('../components/Error/ComingSoon.vue')
+    },
+    {
+      path: '/forgotpassword',
+      name: 'Forgot Password',
+      component: () => import('../components/Form/ForgotPassword.vue')
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: () => import('../components/Form/Login.vue')
+    },
+    {
+      path: '/faq',
+      name: 'Faq',
+      component: () => import('../components/Error/Faq.vue')
     }
   ]
 })

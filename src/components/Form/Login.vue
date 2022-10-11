@@ -21,7 +21,7 @@
                 </div>
                 <div class="main__already">
                     <span>
-                        <a class="main__link" href="#">Esqueci a senha</a>
+                        <a class="main__link" href="/forgotpassword">Esqueci a senha</a>
                     </span>
                 </div>
             </form>

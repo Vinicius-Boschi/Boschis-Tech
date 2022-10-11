@@ -18,11 +18,6 @@
                     <div class="main__status" id="status"></div>
                     <Button title="Recuperar" />
                 </div>
-                <div class="main__already">
-                    <span>
-                        <a class="main__link" href="#">Esqueci a senha</a>
-                    </span>
-                </div>
             </form>
         </div>
     </main>
