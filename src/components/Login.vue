@@ -94,21 +94,5 @@
 <style lang="scss">
     @import '../assets/style/variables.scss';
     @import '../assets/style/Form.scss';
-
-    .weakPassword, .strongPassword, .mediumPassword {
-        margin-top: 1rem;
-    }
-
-    .weakPassword {
-        color: $red;
-    }
-
-    .strongPassword {
-        color: $darkGreen;
-    }
-
-    .mediumPassword {
-        color: $orange;
-    }
-
+    @import '../assets/style/Password.scss';
 </style>

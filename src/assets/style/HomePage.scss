@@ -1,0 +1,98 @@
+.main {
+    margin: auto;
+    width: 90vw;
+
+    &__section {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2rem;
+
+        @include phone {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @include notebook {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__entries {
+        background-color: $white;
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
+    &__incomes-label, #incomes-label {
+        color: $darkGreen;
+    }
+
+    &__expenses-label, #expenses-label {
+        color: $red;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+        color: $darkBlue;
+    }
+
+    &__dollar {
+        filter: invert(1);
+    }
+
+    &__value {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    &__new {
+        margin-left: 2rem;
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__transaction {
+        overflow-x: auto;
+    }
+
+    &__table {
+        width: 100%;
+        padding: 1.5rem 2rem 1.5rem 2rem;
+        text-align: left;
+        border-collapse: separate;
+        border-spacing: 0 0.5rem;
+    }
+
+    &__tr {
+        background-color: $white;
+    }
+
+    &__th {
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
+    &__tbody {
+        background-color: $white;
+        opacity: .9;
+
+        td {
+            padding: 1.5rem 2rem 1.5rem 2rem;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $blue;
+            }
+
+            &#deleteButton {
+                color: $red;
+                cursor: pointer;
+            }
+        }
+    }
+}
