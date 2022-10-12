@@ -1,0 +1,75 @@
+body {
+    background: $white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background: $white;
+    font-size: 16px;
+
+    @include phone {
+        align-items: normal;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: .5rem;
+        }
+    }
+}
+
+.main {
+    font-family: $fontJosefin;
+    text-align: center;
+
+    &__image {
+        img {
+            width: 50vh;
+            height: auto;
+        }
+    }
+}
+
+.footer {
+    background-color: $lightBlue;
+    font-family: $fontJosefin;
+    height: calc(25vh - 2px);
+
+    @include phone {
+        height: auto;
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+    }
+
+    &__paragraph {
+        margin: 1rem auto;
+        width: 35%;
+        line-height: 1.5;
+
+        @include phone {
+            width: auto;
+        }
+
+        @include notebook {
+            width: 50%;
+        }
+    }
+}
