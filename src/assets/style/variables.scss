@@ -17,8 +17,10 @@ $purple: #514869;
 $transparent: #FFFFFF1A;
 $red: #FF0000;
 $blue: #0000FF;
+$blue-two: #407BFF;
 $lightBlue: #C5D8FD;
 $orange: #F97316;
+
 
 @mixin phone {
     @media (min-width: 375px) and (max-width: 639.99px) { @content; }
