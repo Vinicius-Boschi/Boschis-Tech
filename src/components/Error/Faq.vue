@@ -3,12 +3,12 @@
     <main class="main">
         <section class="main__section">
             <div class="main__image-section">
-                <img src="https://user-images.githubusercontent.com/74377158/195437118-db32a490-68fa-4a5c-b218-9efb80498f5e.png" alt="faq by freepik">
+                <img :src="img" :alt="alt">
             </div>
             <div class="main__center">
-                <article class="main__question">
+                <article class="main__question" v-for="item in content" :key="item.id">
                     <div class="main__question-title">
-                        <p>Do you accept all credit cards?</p>
+                        <p>{{ item.question }}</p>
                         <button class="main__button-question">
                             <span class="main__plus-icon">
                                 <i class="far fa-plus-square"></i>
@@ -19,9 +19,7 @@
                         </button>
                     </div>
                     <div class="main__question-text">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet assumenda ratione quod ad itaque sapiente dolores, ducimus sed voluptas eum repellat, minus saepe, similique tempore corrupti iusto doloribus rerum adipisci!
-                        </p>
+                        <p>{{ item.answer }}</p>
                     </div>
                 </article>
             </div>
@@ -30,7 +28,7 @@
 </template>
 
 <script>
-    import Header from '../Principal/Header.vue';
+    import Header from '../Principal/Header.vue'
     
     export default {
         name: "FAQ",
@@ -39,6 +37,17 @@
         },
         data() {
                 return {
+                    img: 'https://user-images.githubusercontent.com/74377158/195437118-db32a490-68fa-4a5c-b218-9efb80498f5e.png', alt:'faq by freepik',
+                    content: [
+                        { 
+                            question: 'Posso excluir uma transação?', 
+                            answer: 'Sim, basta clicar no botão chamado EXCLUIR na tabela de transações.' 
+                        },
+                        { 
+                            question: 'Posso editar uma transação?', 
+                            answer: 'Sim, basta clicar no botão chamado EDITAR na tabela de transações.' 
+                        }
+                    ],
                     showQuestions() {
                         const questions = document.querySelectorAll(".main__question")
                         

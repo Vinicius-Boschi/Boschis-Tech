@@ -56,9 +56,6 @@
                         link: '/comingsoon', title: 'Produtos'
                     },
                     {
-                        link: '/comingsoon', title: 'Nossos Serviços'
-                    },
-                    {
                         link: '/comingsoon', title: 'Política de Privacidade'
                     }
                 ]

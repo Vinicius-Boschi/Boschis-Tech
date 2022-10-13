@@ -20,12 +20,18 @@ body {
     }
 
     &__image-section {
-        img {
-            width: 65%;
+        width: 100%;
 
-            @include phone {
-                display: none;
-            }
+        @include phone {
+            display: none;
+        }
+
+        @include notebook {
+            display: none;
+        }
+        
+        img {
+            width: 100%;
         }
     }
 
@@ -34,14 +40,9 @@ body {
     }
 
     &__question {
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-        margin: 3rem -3rem 0;
-        width: 100%;
+        margin: 2rem;
 
         &.show-text {
-            display: block;
             transition: all 1s linear;
 
             .main__minus-icon {
@@ -58,7 +59,12 @@ body {
         }
 
         @include phone {
-            margin: 2rem 0;
+            margin: 2rem 0 2rem 1rem;
+            align-items: normal;
+        }
+
+        @include notebook {
+            margin: 2rem 0 2rem 1rem;
             align-items: normal;
         }
     }
@@ -66,14 +72,7 @@ body {
     &__question-title {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         margin-bottom: .5rem;
-
-        @include phone {
-            p {
-                margin: 0 auto;
-            }
-        }
     }
 
     &__button-question {
@@ -83,6 +82,7 @@ body {
         color: $blue-two;
         cursor: pointer;
         transition: .4s;
+        margin-left: 1.4rem;
 
         &:hover {
             transform: rotate(90deg);
@@ -98,10 +98,14 @@ body {
         border-top: 1px solid rgba(0, 0, 0, 0.2);
         
         p {
-            margin: .5rem auto;
+            margin: 1rem 0;
 
             @include phone {
-                width: 80%;
+                width: 75%;
+            }
+
+            @include notebook {
+                width: 75%;
             }
         }
     }
