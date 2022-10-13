@@ -13,11 +13,11 @@
                 </div>
                 <div class="main__form-info">
                     <label class="main__label" for="email">Email</label>
-                    <input class="main__input" type="email" name="email" id="email" datatipo="email" placeholder="joaoaugusto@email.com" required>
+                    <input class="main__input" type="email" name="email" id="email" placeholder="joaoaugusto@email.com" required>
                 </div>
                 <div class="main__form-info">
                     <label class="main__label" for="password">Senha</label>
-                    <input class="main__input" type="password" name="password" id="password" placeholder="******" minlength="6" maxlength="12" onkeyup="strongPassword()" datatipo="password" required>
+                    <input class="main__input" type="password" name="password" id="password" placeholder="******" minlength="6" maxlength="12" onkeyup="strongPassword()" required>
                     <img class="main__eye" src="https://user-images.githubusercontent.com/74377158/191601813-c523927e-092b-49ac-981d-344d675c0cac.png" id="eye" alt="eye">
                     <div class="main__status" id="status"></div>
                 </div>

@@ -57,7 +57,7 @@
                         inputDescription.value = data.description
                     }
                     catch (erro) {
-                        window.location.href = '#'
+                        window.location.href = '/error'
                     }
 
                     const form = document.querySelector('[data-form]')
@@ -69,7 +69,7 @@
                             window.location.href = "/"
                         }
                         catch (erro) {
-                            window.location.href = '#'
+                            window.location.href = '/error'
                         }
                     })  
                 }

@@ -57,7 +57,7 @@
                             })
                         }
                         catch (erro) {
-                            window.location.href = '#'
+                            window.location.href = '/error'
                         }
                     })
                 }

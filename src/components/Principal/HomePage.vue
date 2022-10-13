@@ -109,7 +109,7 @@
                                 lineCustomer.remove()
                             }
                             catch (erro) {
-                                window.location.href = '#'
+                                window.location.href = '/error'
                             }
                         }
                     })
@@ -134,7 +134,7 @@
                     }
                     catch (erro) {
                         console.log(erro);
-                        window.location.href = '#'
+                        window.location.href = '/error'
                     }
                 }
             }
@@ -150,5 +150,5 @@
 
 <style lang="scss">
     @import '@/assets/style/variables.scss';
-    @import '@/assets/style/HomePage.scss'
+    @import '@/assets/style/HomePage.scss';
 </style>

@@ -38,6 +38,11 @@ const router = createRouter({
       path: '/faq',
       name: 'Faq',
       component: () => import('../components/Error/Faq.vue')
+    },
+    {
+      path: '/error',
+      name: 'Error404',
+      component: () => import('../components/Error/Erro404.vue')
     }
   ]
 })
